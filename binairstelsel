@@ -1,11 +1,11 @@
-<!DOCTYPE html> <!--main2-->
-<html> <!--html-element2-->
+<!DOCTYPE html>
+<html>
   <head>
      <title>binair stelsel</title>
      <meta charset="utf-8">
   </head>
   <body>
      binair stelsel gaming
-<a href="index.html" >home</a> <!--Ga terug naar home-->
+ <a href="index.html" >home</a> <!--Ga terug naar home-->
   </body>
 </html>
