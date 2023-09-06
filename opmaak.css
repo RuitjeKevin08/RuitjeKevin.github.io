@@ -8,6 +8,7 @@ ul {
 
 li {
   float: left;
+  margin-right: 10px;
 }
 li a {
   display: block;
