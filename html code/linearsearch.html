@@ -1,7 +1,6 @@
 <html>
   <body>
     <script>
-      function main() {
     var getallenrij, i;
     var zoekgetal = createArray(50);
 
@@ -29,18 +28,17 @@
         if (zoekgetal[i] == getal) {
 
             // in dit geval staat hij op plek 49
-            window.alert(getal.ToString() + " staat op plek " + i);
+            window.alert(getal.toString() + " staat op plek " + i);
         } else {
 
             // in dit geval staat hij er niet in
-            window.alert(getal.ToString() + " staat niet in de rij");
+            window.alert(getal.toString() + " staat niet in de rij");
         }
     } else {
 
         // hier staat hij op een van de plekken 0 t/m 48
-        window.alert(getal.ToString() + " staat op plek " + i);
+        window.alert(getal.toString() + " staat op plek " + i);
     }
-}
 
     </script>
   </body>
