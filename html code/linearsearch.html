@@ -1,0 +1,47 @@
+<html>
+  <body>
+    <script>
+      function main() {
+    var getallenrij, i;
+    var zoekgetal = createArray(50);
+
+    // zoekgetal[50] betekent dat hij 50 cijfers lang is
+    var getal;
+
+    for (i = 0; i <= 49; i++) {
+
+        // hij verzint een getallenlijn met 50 cijfers van 0 tot 100
+        zoekgetal[i] = Math.floor(Math.random() * 100);
+    }
+    window.alert("Welk getal wil je zoeken?");
+    getal = Number(window.prompt('Enter a value for getal'));
+
+    // je vult een getal in
+    i = 0;
+    while (i < 49 && getal != zoekgetal[i]) {
+        i = i + 1;
+
+        // elke keer als hij het getal niet vind doet hij +1
+    }
+    if (i == 49) {
+
+        // i=49 betekent dat hij of op de laatste plek staat of hij er niet in zit
+        if (zoekgetal[i] == getal) {
+
+            // in dit geval staat hij op plek 49
+            window.alert(getal.ToString() + " staat op plek " + i);
+        } else {
+
+            // in dit geval staat hij er niet in
+            window.alert(getal.ToString() + " staat niet in de rij");
+        }
+    } else {
+
+        // hier staat hij op een van de plekken 0 t/m 48
+        window.alert(getal.ToString() + " staat op plek " + i);
+    }
+}
+
+    </script>
+  </body>
+</html>
